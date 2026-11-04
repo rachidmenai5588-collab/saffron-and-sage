@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saffron &amp; Sage — Restaurant Website Template for Sale</title>
+  <meta name="description" content="Saffron & Sage is a complete, ready-to-customize restaurant website template: 6 pages in pure HTML, CSS and JavaScript. No build step, no backend.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .price-card { background: var(--forest); color: var(--cream); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); }
+    .price-card h2 { color: var(--cream); }
+    .price-card .price-big { font-family: var(--font-head); font-size: 3rem; color: var(--gold-light); margin: 0.25rem 0 0.5rem; }
+    .proposal-note { background: rgba(227, 200, 120, 0.18); border: 1px solid var(--gold); border-radius: 10px; padding: 0.75rem 1rem; font-size: 0.95rem; }
+    .steps { counter-reset: step; list-style: none; padding: 0; margin: 1.5rem 0 0; }
+    .steps li { position: relative; padding: 0 0 1.25rem 3rem; }
+    .steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; border-radius: 50%; background: var(--gold); color: var(--forest-dark); font-weight: 800; display: flex; align-items: center; justify-content: center; }
+    .steps li:last-child { padding-bottom: 0; }
+    .callout { background: var(--cream-dark); border-left: 4px solid var(--gold); border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; }
+    .lite-box { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); }
+    .page-list { columns: 2; column-gap: 2rem; margin: 0; padding-left: 1.25rem; }
+    .page-list li { margin-bottom: 0.5rem; break-inside: avoid; }
+    @media (max-width: 700px) { .page-list { columns: 1; } }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Saffron <span>&amp;</span> Sage</a>
+    <span style="color: var(--gold-light); font-weight: 700;">Restaurant Website Template</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80');">
+    <div class="container">
+      <p class="eyebrow">For developers &amp; agencies</p>
+      <h1>A complete restaurant website, ready to customize.</h1>
+      <p>Saffron &amp; Sage is a full restaurant website template for a fictional seasonal restaurant: 6 pages in pure HTML, CSS, and vanilla JavaScript. No build step, no backend, no frameworks — open it in a browser and it just works.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="lite/index.html">View the Live Demo (Lite Preview)</a>
+        <a class="btn btn-outline" href="#buy">How to Buy</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2" style="align-items: start;">
+      <div>
+        <p class="eyebrow">What you get</p>
+        <h2>Everything a restaurant site needs</h2>
+        <ul class="page-list">
+          <li><strong>Home</strong> — hero, welcome section, signature dishes, opening hours, guest quotes</li>
+          <li><strong>Menu</strong> — 16 dishes in 4 courses with a working category filter</li>
+          <li><strong>Reservations</strong> — reservation request form with front-end validation</li>
+          <li><strong>Gallery</strong> — photo gallery with a JavaScript lightbox (click, arrow keys, Esc)</li>
+          <li><strong>About</strong> — story, head chef, and house promises</li>
+          <li><strong>Contact</strong> — address, hours, and a message form</li>
+        </ul>
+        <p style="margin-top: 1.5rem;">One shared stylesheet and one script power all six pages, with a shared header (including a mobile menu), navigation, and footer. Responsive and mobile-first: single column on phones, two columns from 768px, three columns from 1200px.</p>
+        <h3>Easy to make your own</h3>
+        <p>Change the restaurant name, address, phone, email, and hours with a simple search-and-replace. Recolor the whole site by editing four variables at the top of the stylesheet. Swap the fonts by changing one link in each page head. Menu dishes and gallery photos are single blocks you can copy, edit, or remove.</p>
+        <div class="callout">
+          <p style="margin: 0;"><strong>Please note:</strong> the reservation and contact forms are front-end only — they validate input and show a confirmation message, but they do not send email or save bookings. Connect them to your own booking system or form service before going live. Demo photographs come from Unsplash for preview; for a production site, host your own photography or verify the license terms of any photo you keep.</p>
+        </div>
+      </div>
+      <div>
+        <div class="price-card">
+          <p class="eyebrow">Full template — 6 pages</p>
+          <h2>Saffron &amp; Sage</h2>
+          <p class="price-big">$15</p>
+          <p>One-time payment. You receive the complete template files with a commercial license for one end product (one restaurant website).</p>
+          <p class="proposal-note"><strong>Proposed price:</strong> $15 is a proposal — the seller can change this price before publishing.</p>
+          <p style="margin-top: 1.25rem;"><a class="btn btn-gold" href="#buy">How to Buy</a></p>
+        </div>
+        <div class="lite-box" style="margin-top: 1.5rem;">
+          <p class="eyebrow">Try it free</p>
+          <h3>Free lite version</h3>
+          <p>Not sure yet? The free lite version is a single page with the same look and feel: a hero section, three featured dishes, and contact details. No email needed — open it right now.</p>
+          <p><a class="btn btn-dark" href="lite/index.html">Get the Free Lite Version</a></p>
+          <p class="muted" style="margin: 0;">The lite version is a simpler preview. The full $15 template adds the complete menu with filter, reservation and contact forms, gallery with lightbox, and about page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="buy">
+    <div class="container section-narrow">
+      <p class="eyebrow">How to buy</p>
+      <h2>Four simple steps — no account, no checkout platform</h2>
+      <ol class="steps">
+        <li><strong>Email the seller</strong> at <a href="mailto:rachidmenai5588@gmail.com" style="color: var(--gold-light); font-weight: 700;">rachidmenai5588@gmail.com</a> and mention “Saffron &amp; Sage template”. Tell the seller whether you are buying from the EU or the UK so the right payment method can be arranged.</li>
+        <li><strong>Receive payment details privately.</strong> The seller replies to your email with the bank payment details. Payment details are shared privately after contact only — they are never published on this page.</li>
+        <li><strong>Pay by bank transfer.</strong> EU buyers pay by SEPA bank transfer; UK buyers pay by UK bank transfer. There are no card or platform fees on top of the price.</li>
+        <li><strong>Receive your download link.</strong> Once your payment is received, the seller emails you the download link for the full template files, ready to unzip and customize.</li>
+      </ol>
+      <p style="margin-top: 1.5rem;">Questions about the template? Email the same address — <a href="mailto:rachidmenai5588@gmail.com" style="color: var(--gold-light); font-weight: 700;">rachidmenai5588@gmail.com</a> — and the seller will reply.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-narrow">
+      <p class="eyebrow">License</p>
+      <h2>What the license covers</h2>
+      <p>The template is the exclusive property of the author. Your purchase includes a commercial license for <strong>one end product</strong> — one restaurant website. You may customize the text, colors, images, and layout for that website.</p>
+      <p>You may not resell, redistribute, re-license, sublicense, or give away the template, in whole or in part, whether modified or unmodified, and you may not claim authorship of it. Demo photographs are subject to their own licenses — replace them with your own photography, or verify the license terms, before publishing a live website.</p>
+      <p class="muted">The template is provided “as is”, without warranty of any kind. The reservation and contact forms are front-end demonstrations only and require your own backend before use.</p>
+      <p><a class="btn btn-dark" href="lite/index.html">View the Live Demo (Lite Preview)</a>&nbsp;&nbsp;<a class="btn btn-gold" href="lite/index.html">Get the Free Lite Version</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Saffron &amp; Sage</h3>
+      <p>Restaurant website template — 6 pages, pure HTML, CSS, and JavaScript. No build step, no backend.</p>
+    </div>
+    <div>
+      <h3>Demo</h3>
+      <p><a href="lite/index.html">Live demo (lite version)</a></p>
+    </div>
+    <div>
+      <h3>Buy</h3>
+      <p><a href="mailto:rachidmenai5588@gmail.com">rachidmenai5588@gmail.com</a><br><a href="#buy">How to buy</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom container">© 2026 Saffron &amp; Sage template. All rights reserved. · <a href="index.html">Sales page</a> · <a href="lite/index.html">Free lite version</a></div>
+</footer>
+</body>
+</html>
