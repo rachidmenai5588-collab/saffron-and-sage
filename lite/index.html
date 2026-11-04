@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saffron &amp; Sage — Free Lite Version</title>
+  <meta name="description" content="Free one-page lite version of the Saffron & Sage restaurant website template: hero, featured dishes, and contact details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #1e3a2f; --forest-dark: #142a22; --charcoal: #232620;
+      --gold: #c8a24a; --gold-light: #e3c878; --cream: #faf6ee;
+      --cream-dark: #f1e9d8; --ink: #26291f; --muted: #6d7166;
+      --line: #e5ddc9; --white: #ffffff; --radius: 14px;
+      --shadow: 0 10px 30px rgba(30, 58, 47, 0.14);
+      --font-head: "Playfair Display", Georgia, "Times New Roman", serif;
+      --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--font-body); color: var(--ink); background: var(--cream); line-height: 1.6; }
+    img { max-width: 100%; }
+    a { color: var(--forest); }
+    h1, h2, h3 { font-family: var(--font-head); line-height: 1.2; margin: 0 0 0.5em; }
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.9rem; }
+    p { margin: 0 0 1em; }
+    .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+    .section { padding: 3.5rem 0; }
+    .eyebrow { text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); font-size: 0.78rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .muted { color: var(--muted); }
+    .center { text-align: center; }
+    .site-header { position: sticky; top: 0; z-index: 50; background: var(--forest-dark); color: var(--cream); box-shadow: 0 2px 18px rgba(0, 0, 0, 0.25); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 64px; }
+    .logo { font-family: var(--font-head); font-size: 1.45rem; font-weight: 700; color: var(--cream); text-decoration: none; white-space: nowrap; }
+    .logo span { color: var(--gold-light); }
+    .nav-note { color: var(--gold-light); font-weight: 700; font-size: 0.95rem; }
+    .hero { background-size: cover; background-position: center; color: var(--cream); padding: 5rem 0; position: relative; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: rgba(20, 42, 34, 0.55); }
+    .hero .container { position: relative; }
+    .hero h1 { color: var(--cream); }
+    .hero p { max-width: 640px; }
+    .btn { display: inline-block; padding: 0.8rem 1.5rem; border-radius: 999px; font-weight: 700; text-decoration: none; }
+    .btn-gold { background: var(--gold); color: var(--forest-dark); }
+    .btn-outline { border: 2px solid var(--cream); color: var(--cream); }
+    .btn-dark { background: var(--forest); color: var(--cream); }
+    .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .grid { display: grid; gap: 1.5rem; }
+    .grid-3 { grid-template-columns: 1fr; }
+    @media (min-width: 768px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+    .card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .card-body { padding: 1.25rem; }
+    .img-frame { background: var(--forest-dark); overflow: hidden; }
+    .img-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .ratio-4x3 { aspect-ratio: 4 / 3; }
+    .price { font-weight: 800; color: var(--forest); font-size: 1.1rem; }
+    .band { background: var(--forest); color: var(--cream); }
+    .band h2, .band a { color: var(--cream); }
+    .band .btn-gold { color: var(--forest-dark); }
+    .hours-table { width: 100%; border-collapse: collapse; }
+    .hours-table td { padding: 0.5rem 0; border-bottom: 1px solid rgba(250, 246, 238, 0.2); }
+    .hours-table td:last-child { text-align: right; font-weight: 700; }
+    .lite-note { background: var(--cream-dark); border-left: 4px solid var(--gold); border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; }
+    .site-footer { background: var(--forest-dark); color: var(--cream); padding: 2.5rem 0 1.5rem; margin-top: 0; }
+    .site-footer p { color: rgba(250, 246, 238, 0.85); }
+    .site-footer a { color: var(--gold-light); }
+    .footer-bottom { border-top: 1px solid rgba(250, 246, 238, 0.15); padding-top: 1rem; margin-top: 1.5rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top">Saffron <span>&amp;</span> Sage</a>
+    <span class="nav-note">Free Lite Version</span>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80');">
+    <div class="container">
+      <p class="eyebrow">Seasonal · Wood-fired · Homemade</p>
+      <h1>Good food, cooked slowly, shared warmly.</h1>
+      <p>Saffron &amp; Sage is a neighbourhood restaurant built around the seasons: wood-fired mains, fresh pasta, and desserts made from scratch every morning.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#dishes">Featured Dishes</a>
+        <a class="btn btn-outline" href="#visit">Visit Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dishes">
+    <div class="container">
+      <p class="eyebrow">Signature Dishes</p>
+      <h2>Guests keep coming back for these</h2>
+      <div class="grid grid-3" style="margin-top: 1.5rem;">
+        <article class="card">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Char-grilled ribs"></div>
+          <div class="card-body">
+            <h3>Char-Grilled Ribeye</h3>
+            <p class="muted">Dry-aged ribeye, rosemary butter, roasted potatoes.</p>
+            <span class="price">$34</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Truffle pasta"></div>
+          <div class="card-body">
+            <h3>Truffle Tagliatelle</h3>
+            <p class="muted">Hand-cut pasta, black truffle cream, parmesan.</p>
+            <span class="price">$22</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Dark chocolate dessert"></div>
+          <div class="card-body">
+            <h3>Dark Chocolate Fondant</h3>
+            <p class="muted">Molten dark chocolate cake, vanilla cream.</p>
+            <span class="price">$11</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="visit">
+    <div class="container">
+      <p class="eyebrow">Visit Us</p>
+      <h2>12 Willow Lane, Old Town</h2>
+      <p>Open Tuesday to Sunday, 12:00–22:00. Kitchen closes at 21:30. Closed on Mondays.</p>
+      <table class="hours-table">
+        <tr><td>Tuesday – Friday</td><td>12:00 – 22:00</td></tr>
+        <tr><td>Saturday</td><td>11:00 – 23:00</td></tr>
+        <tr><td>Sunday</td><td>11:00 – 21:00</td></tr>
+        <tr><td>Monday</td><td>Closed</td></tr>
+      </table>
+      <p style="margin-top: 1.25rem;">Call (555) 123-4567 or email hello@saffronandsage.example — demo details for this fictional restaurant, replace them with your own.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="lite-note">
+        <p style="margin: 0;"><strong>This is the free lite version</strong> of the Saffron &amp; Sage restaurant website template — one page with a hero, featured dishes, and contact details. The full template adds the complete 16-dish menu with a working category filter, reservation and contact forms, a photo gallery with lightbox, and an about page. To get the full template, email <a href="mailto:rachidmenai5588@gmail.com">rachidmenai5588@gmail.com</a> and mention “Saffron &amp; Sage template”.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Saffron &amp; Sage — free lite version of the restaurant website template. Demo photographs are loaded from Unsplash for preview; replace them with your own photography before publishing a live website.</p>
+    <p class="footer-bottom">© 2026 Saffron &amp; Sage template. All rights reserved. · <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+</body>
+</html>
