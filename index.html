@@ -24,6 +24,13 @@
     .page-list li { margin-bottom: 0.5rem; break-inside: avoid; }
     @media (max-width: 700px) { .page-list { columns: 1; } }
   </style>
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+  <script>
+    Paddle.Initialize({ token: "live_9682057c94f8241d73bc311bf81" });
+    function openPaddleCheckout() {
+      Paddle.Checkout.open({ items: [{ priceId: "pri_01m6k49afj8yamyyggqwvt556a", quantity: 1 }] });
+    }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -72,7 +79,8 @@
           <h2>Saffron &amp; Sage</h2>
           <p class="price-big">$15</p>
           <p>One-time payment. You receive the complete template files with a commercial license for one end product (one restaurant website).</p>
-          <p class="proposal-note"><strong>Proposed price:</strong> $15 is a proposal — the seller can change this price before publishing.</p>
+          <p style="margin-top: 1.25rem;"><button class="btn btn-gold" onclick="openPaddleCheckout()">Buy Now with Paddle — $15</button></p>
+          <p class="muted">Secure checkout by Paddle (cards and more). Or buy by email and bank transfer — see “How to buy” below.</p>
           <p style="margin-top: 1.25rem;"><a class="btn btn-gold" href="#buy">How to Buy</a></p>
         </div>
         <div class="lite-box" style="margin-top: 1.5rem;">
@@ -89,7 +97,9 @@
   <section class="section band" id="buy">
     <div class="container section-narrow">
       <p class="eyebrow">How to buy</p>
-      <h2>Four simple steps — no account, no checkout platform</h2>
+      <h2>Two ways to buy</h2>
+      <p><strong>Option A — Paddle checkout (instant):</strong> click “Buy Now with Paddle — $15” above, pay by card in the secure Paddle checkout, and the seller emails you the download link once payment is received.</p>
+      <p><strong>Option B — Email and bank transfer:</strong></p>
       <ol class="steps">
         <li><strong>Email the seller</strong> at <a href="mailto:rachidmenai5588@gmail.com" style="color: var(--gold-light); font-weight: 700;">rachidmenai5588@gmail.com</a> and mention “Saffron &amp; Sage template”. Tell the seller whether you are buying from the EU or the UK so the right payment method can be arranged.</li>
         <li><strong>Receive payment details privately.</strong> The seller replies to your email with the bank payment details. Payment details are shared privately after contact only — they are never published on this page.</li>
@@ -127,7 +137,7 @@
       <p><a href="mailto:rachidmenai5588@gmail.com">rachidmenai5588@gmail.com</a><br><a href="#buy">How to buy</a></p>
     </div>
   </div>
-  <div class="footer-bottom container">© 2026 Saffron &amp; Sage template. All rights reserved. · <a href="index.html">Sales page</a> · <a href="lite/index.html">Free lite version</a></div>
+  <div class="footer-bottom container">© 2026 Saffron &amp; Sage template. All rights reserved. · <a href="index.html">Sales page</a> · <a href="lite/index.html">Free lite version</a> · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Notice</a> · <a href="refund.html">Refund Policy</a></div>
 </footer>
 </body>
 </html>
