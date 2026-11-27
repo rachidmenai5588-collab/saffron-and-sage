@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Saffron &amp; Sage</title>
+  <meta name="description" content="Explore the Saffron & Sage menu: starters, mains, desserts, and drinks, cooked with seasonal ingredients.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Saffron <span>&amp;</span> Sage</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-gold btn-small header-cta" href="reservation.html">Book a Table</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero page-hero" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80');">
+    <div class="container">
+      <p class="eyebrow">Our Menu</p>
+      <h1>Seasonal dishes, made from scratch</h1>
+      <p>Filter by course below. Prices include service; ask your server about allergens and today's specials.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="filter-bar" role="group" aria-label="Filter menu by course">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="starters">Starters</button>
+        <button type="button" class="filter-btn" data-filter="mains">Mains</button>
+        <button type="button" class="filter-btn" data-filter="desserts">Desserts</button>
+        <button type="button" class="filter-btn" data-filter="drinks">Drinks</button>
+      </div>
+
+      <div class="grid grid-2" id="menuGrid">
+        <article class="card menu-card" data-category="starters">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=900&q=80" alt="Roasted tomato soup"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Roasted Tomato Soup</h3><span class="price">$9</span></div>
+            <p class="muted">Slow-roasted tomatoes, basil oil, grilled sourdough.</p>
+            <span class="tag">Starters</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="starters">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80" alt="Wood-fired flatbread"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Wood-Fired Flatbread</h3><span class="price">$12</span></div>
+            <p class="muted">Blistered crust, mozzarella, wild mushrooms, thyme.</p>
+            <span class="tag">Starters</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="starters">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Garden greens bowl"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Garden Greens Bowl</h3><span class="price">$11</span></div>
+            <p class="muted">Crisp leaves, shaved fennel, citrus dressing, toasted seeds.</p>
+            <span class="tag">Starters</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="starters">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80" alt="Saffron rice pilaf"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Saffron Rice Pilaf</h3><span class="price">$10</span></div>
+            <p class="muted">Fragrant saffron rice, fresh herbs, toasted almonds.</p>
+            <span class="tag">Starters</span>
+          </div>
+        </article>
+
+        <article class="card menu-card" data-category="mains">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Char-grilled ribeye"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Char-Grilled Ribeye</h3><span class="price">$34</span></div>
+            <p class="muted">Dry-aged ribeye, rosemary butter, roasted potatoes.</p>
+            <span class="tag">Mains</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="mains">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80" alt="Herb-crusted steak plate"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Herb-Crusted Steak</h3><span class="price">$32</span></div>
+            <p class="muted">Seared steak, herb crust, seasonal vegetables.</p>
+            <span class="tag">Mains</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="mains">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Truffle tagliatelle"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Truffle Tagliatelle</h3><span class="price">$22</span></div>
+            <p class="muted">Hand-cut pasta, black truffle cream, parmesan.</p>
+            <span class="tag">Mains</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="mains">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Sage smash burger"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Sage Smash Burger</h3><span class="price">$21</span></div>
+            <p class="muted">Dry-aged beef, aged cheddar, sage mayo, brioche bun.</p>
+            <span class="tag">Mains</span>
+          </div>
+        </article>
+
+        <article class="card menu-card" data-category="desserts">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Dark chocolate fondant"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Dark Chocolate Fondant</h3><span class="price">$11</span></div>
+            <p class="muted">Molten dark chocolate cake, vanilla cream.</p>
+            <span class="tag">Desserts</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="desserts">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80" alt="Wild berry shortcake"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Wild Berry Shortcake</h3><span class="price">$12</span></div>
+            <p class="muted">Vanilla sponge, macerated berries, chantilly cream.</p>
+            <span class="tag">Desserts</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="desserts">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" alt="Vanilla panna cotta"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Vanilla Panna Cotta</h3><span class="price">$10</span></div>
+            <p class="muted">Silky vanilla cream, berry coulis.</p>
+            <span class="tag">Desserts</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="desserts">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80" alt="Honeycomb ice cream sundae"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Honeycomb Sundae</h3><span class="price">$11</span></div>
+            <p class="muted">Vanilla ice cream, honeycomb crunch, warm caramel.</p>
+            <span class="tag">Desserts</span>
+          </div>
+        </article>
+
+        <article class="card menu-card" data-category="drinks">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Sage garden martini"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Sage Garden Martini</h3><span class="price">$13</span></div>
+            <p class="muted">Gin, fresh sage, lime, cucumber.</p>
+            <span class="tag">Drinks</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="drinks">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=900&q=80" alt="Citrus sunset cooler"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Citrus Sunset Cooler</h3><span class="price">$12</span></div>
+            <p class="muted">Citrus, mint, sparkling water, house syrup.</p>
+            <span class="tag">Drinks</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="drinks">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=900&q=80" alt="Blood orange spritz"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Blood Orange Spritz</h3><span class="price">$12</span></div>
+            <p class="muted">Blood orange, prosecco, soda, rosemary.</p>
+            <span class="tag">Drinks</span>
+          </div>
+        </article>
+        <article class="card menu-card" data-category="drinks">
+          <div class="img-frame ratio-4x3"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Slow-bar espresso"></div>
+          <div class="card-body">
+            <div class="menu-top"><h3>Slow-Bar Espresso</h3><span class="price">$5</span></div>
+            <p class="muted">Single-origin beans, brewed to order.</p>
+            <span class="tag">Drinks</span>
+          </div>
+        </article>
+      </div>
+      <p class="empty-note" id="menuEmpty">No dishes in this course yet.</p>
+      <p class="center" style="margin-top: 2rem;">Found something you like? <a class="btn btn-dark" href="reservation.html">Book a Table</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Saffron &amp; Sage</h3>
+      <p>Seasonal cooking, warm hospitality, and a table that always feels like home. Open for lunch and dinner, Tuesday through Sunday.</p>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <p>12 Willow Lane, Old Town<br>Open Tue–Sun · 12:00–22:00<br>Closed Mondays</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="tel:+15551234567">(555) 123-4567</a><br><a href="mailto:hello@saffronandsage.example">hello@saffronandsage.example</a><br><a href="contact.html">Find us &amp; send a message</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom container">© <span id="year">2026</span> Saffron &amp; Sage. All rights reserved. · <a href="index.html">Home</a> · <a href="menu.html">Menu</a> · <a href="reservation.html">Reservations</a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

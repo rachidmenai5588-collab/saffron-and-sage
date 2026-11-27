@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Saffron &amp; Sage</title>
+  <meta name="description" content="A look inside Saffron & Sage: the dining room, the kitchen, and dishes from our seasonal menu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Saffron <span>&amp;</span> Sage</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-gold btn-small header-cta" href="reservation.html">Book a Table</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero page-hero" style="background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1600&q=80');">
+    <div class="container">
+      <p class="eyebrow">Gallery</p>
+      <h1>Inside Saffron &amp; Sage</h1>
+      <p>Click any photo to view it larger. Use the arrow keys to browse.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="gallery-grid" id="galleryGrid">
+        <button type="button" data-full="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80" aria-label="View dining room photo"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80" alt="The dining room"></button>
+        <button type="button" data-full="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=80" aria-label="View table setting photo"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="A set table"></button>
+        <button type="button" data-full="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1600&q=80" aria-label="View dinner service photo"><img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80" alt="Dinner service"></button>
+        <button type="button" data-full="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1600&q=80" aria-label="View plated dish photo"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80" alt="A plated dish"></button>
+        <button type="button" data-full="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1600&q=80" aria-label="View kitchen photo"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Cooking in the kitchen"></button>
+        <button type="button" data-full="https://images.unsplash.com/photo-1517244683847-7456b63c5969?auto=format&fit=crop&w=1600&q=80" aria-label="View restaurant table photo"><img src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?auto=format&fit=crop&w=800&q=80" alt="A restaurant table"></button>
+        <button type="button" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" aria-label="View fine dining photo"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Fine dining plate"></button>
+        <button type="button" data-full="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80" aria-label="View restaurant interior photo"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Restaurant interior"></button>
+        <button type="button" data-full="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1600&q=80" aria-label="View warm dining room photo"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Warm dining room"></button>
+      </div>
+      <p class="center" style="margin-top: 2rem;"><a class="btn btn-dark" href="reservation.html">Come See It in Person</a></p>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+  <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close viewer">×</button>
+  <button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+  <img id="lightboxImg" src="" alt="Gallery photo">
+  <button type="button" class="lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Saffron &amp; Sage</h3>
+      <p>Seasonal cooking, warm hospitality, and a table that always feels like home. Open for lunch and dinner, Tuesday through Sunday.</p>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <p>12 Willow Lane, Old Town<br>Open Tue–Sun · 12:00–22:00<br>Closed Mondays</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="tel:+15551234567">(555) 123-4567</a><br><a href="mailto:hello@saffronandsage.example">hello@saffronandsage.example</a><br><a href="contact.html">Find us &amp; send a message</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom container">© <span id="year">2026</span> Saffron &amp; Sage. All rights reserved. · <a href="index.html">Home</a> · <a href="menu.html">Menu</a> · <a href="reservation.html">Reservations</a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

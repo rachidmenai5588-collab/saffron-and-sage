@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservations — Saffron &amp; Sage</title>
+  <meta name="description" content="Reserve a table at Saffron & Sage. Parties of up to 12, lunch and dinner, Tuesday through Sunday.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Saffron <span>&amp;</span> Sage</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-gold btn-small header-cta" href="reservation.html">Book a Table</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero page-hero" style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=80');">
+    <div class="container">
+      <p class="eyebrow">Reservations</p>
+      <h1>Book your table</h1>
+      <p>Tables for lunch and dinner, Tuesday through Sunday. Parties of 9 or more, please call us directly.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container grid grid-2" style="align-items: start;">
+      <div class="card"><div class="card-body">
+        <h2>Reservation request</h2>
+        <form class="form" id="reservationForm" novalidate>
+          <div class="form-row">
+            <div>
+              <label for="resName">Full name *</label>
+              <input id="resName" type="text" autocomplete="name" placeholder="Jordan Ellis">
+              <span class="field-error" id="errName"></span>
+            </div>
+            <div>
+              <label for="resEmail">Email *</label>
+              <input id="resEmail" type="email" autocomplete="email" placeholder="you@example.com">
+              <span class="field-error" id="errEmail"></span>
+            </div>
+          </div>
+          <div>
+            <label for="resPhone">Phone (optional)</label>
+            <input id="resPhone" type="tel" autocomplete="tel" placeholder="(555) 000-0000">
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="resDate">Date *</label>
+              <input id="resDate" type="date">
+              <span class="field-error" id="errDate"></span>
+            </div>
+            <div>
+              <label for="resTime">Time *</label>
+              <select id="resTime">
+                <option value="">Choose a time…</option>
+                <option>12:00</option><option>13:00</option><option>14:00</option>
+                <option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option>
+              </select>
+              <span class="field-error" id="errTime"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="resGuests">Guests *</label>
+              <select id="resGuests">
+                <option value="">How many guests?</option>
+                <option>1 guest</option><option>2 guests</option><option>3 guests</option>
+                <option>4 guests</option><option>5 guests</option><option>6 guests</option>
+                <option>7 guests</option><option>8 guests</option>
+              </select>
+              <span class="field-error" id="errGuests"></span>
+            </div>
+            <div>
+              <label for="resOccasion">Occasion (optional)</label>
+              <select id="resOccasion">
+                <option>Just dinner</option><option>Birthday</option>
+                <option>Anniversary</option><option>Business meal</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="resRequests">Special requests (optional)</label>
+            <textarea id="resRequests" rows="4" placeholder="Allergies, seating preferences, celebrations…"></textarea>
+          </div>
+          <button class="btn btn-gold" type="submit">Request Reservation</button>
+          <p class="form-note">This is a front-end demo form. It validates your details and shows a confirmation message, but it does not send anything: connect it to your own booking system or email service before going live.</p>
+        </form>
+        <div class="success-box" id="resSuccess" role="status">
+          <h3>Request received</h3>
+          <p id="resSummary" style="margin: 0;"></p>
+        </div>
+      </div></div>
+
+      <div>
+        <div class="card"><div class="card-body">
+          <h3>Good to know</h3>
+          <table class="hours-table">
+            <tr><td>Tuesday – Friday</td><td>12:00 – 22:00</td></tr>
+            <tr><td>Saturday</td><td>11:00 – 23:00</td></tr>
+            <tr><td>Sunday</td><td>11:00 – 21:00</td></tr>
+            <tr><td>Monday</td><td>Closed</td></tr>
+          </table>
+          <p style="margin-top: 1rem;">Tables are held for 15 minutes past the booking time. For same-day bookings after 17:00, please call <a href="tel:+15551234567">(555) 123-4567</a>.</p>
+        </div></div>
+        <div class="img-frame ratio-16x9" style="border-radius: 14px; margin-top: 1.5rem;">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80" alt="The dining room at Saffron and Sage">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Saffron &amp; Sage</h3>
+      <p>Seasonal cooking, warm hospitality, and a table that always feels like home. Open for lunch and dinner, Tuesday through Sunday.</p>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <p>12 Willow Lane, Old Town<br>Open Tue–Sun · 12:00–22:00<br>Closed Mondays</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="tel:+15551234567">(555) 123-4567</a><br><a href="mailto:hello@saffronandsage.example">hello@saffronandsage.example</a><br><a href="contact.html">Find us &amp; send a message</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom container">© <span id="year">2026</span> Saffron &amp; Sage. All rights reserved. · <a href="index.html">Home</a> · <a href="menu.html">Menu</a> · <a href="reservation.html">Reservations</a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
